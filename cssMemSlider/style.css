@@ -42,6 +42,7 @@ figcaption {
 	animation: text 3s 1;
 }
 
+
 @keyframes text {
 	0% {
 		transform: translateX(50%);
@@ -84,6 +85,19 @@ input{
 }
 
 
+#active{ 
+	margin: -1.7em 0 0 0;
+	text-align: right;
+	width: 20%;
+    height: 25px;
+	float: right;
+	background: rgb(35, 81, 150);
+    display: flex;
+    justify-content: right;
+    column-gap: 8px;
+
+}
+
 #active label{
 	border-radius: 50%; 
 	display: inline-block;
@@ -95,19 +109,20 @@ input{
 }
 
 
-#active{ 
-	margin: -1.7em 0 0 0;
-	text-align: right;
-	width: 20%;
-	float: right;
-	background: rgb(35, 81, 150);
-}
-
-#active label:hover{
+#active label:hover {
 	background: #fff;
 	border-color: #fff !important;
 
 }
+#active label:active {
+    background:rgb(200, 73, 242);
+}
+
+#active label::before {
+    content: "";
+    cursor: pointer;
+    padding: 1.5em;
+  }
 
 
 #switch1:checked ~ #active label:nth-child(1),
@@ -131,6 +146,7 @@ input{
 		margin: -3.7em 0 0 0;
 		width: 100%;
 		float: none;
+        justify-content: center;
 	}
 
 	figure {
