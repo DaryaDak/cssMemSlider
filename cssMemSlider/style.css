@@ -1,10 +1,12 @@
 body {
 	background: rgb(35, 81, 150);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #slider { 
-    position: relative;
+    /* position: relative; */
 	text-align: center;
-    top: 5vh;
+    padding-top: 5%;
 }
 
 #slider{
@@ -89,20 +91,20 @@ input{
 	margin: -1.7em 0 0 0;
 	text-align: right;
 	width: 20%;
-    height: 25px;
+    height: 1.5em;
 	float: right;
 	background: rgb(35, 81, 150);
     display: flex;
     justify-content: right;
-    column-gap: 8px;
+    column-gap: 0.6em;
 
 }
 
 #active label{
 	border-radius: 50%; 
 	display: inline-block;
-	width: 11px;
-	height: 11px;
+	width: 0.7em;
+	height: 0.7em;
 	background: #fdf909;	
 	margin: 0.2em;
 	border: 1px solid #fdf909;
@@ -121,7 +123,7 @@ input{
 #active label::before {
     content: "";
     cursor: pointer;
-    padding: 10px;
+    padding: 0.7em;
   }
 
 
@@ -131,8 +133,8 @@ input{
 #switch4:checked ~ #active label:nth-child(4),
 #switch5:checked ~ #active label:nth-child(5){
 	background: rgb(35, 81, 150);
-	width: 11px;
-	height: 11px;
+	width: 0.7em;
+	height: 0.7em;
 	border: 1px solid #fdf909;
 }
 
