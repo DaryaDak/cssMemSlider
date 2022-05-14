@@ -121,7 +121,7 @@ input{
 #active label::before {
     content: "";
     cursor: pointer;
-    padding: 1.5em;
+    padding: 10px;
   }
 
 
