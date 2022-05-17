@@ -4,12 +4,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #slider { 
-	text-align: center;
+	text-align: right;
     padding-top: 5%;
 }
 
 #slider{
 	margin: 0 auto;
+}
+
+#slides {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #slides article{ 
@@ -89,10 +95,8 @@ input{
 
 
 #active{ 
-	margin: -1.7em 0 0 0;
-	text-align: right;
-	width: 20%;
-	margin-left: auto;
+	margin-top: -1.7em;
+	margin-left: 50%;
 	background: rgb(35, 81, 150);
     column-gap: 0.6em;
 }
@@ -125,11 +129,11 @@ label{
 
 
 
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
+#switch1:checked ~ #slides #active label:nth-child(1),
+#switch2:checked ~ #slides #active label:nth-child(2),
+#switch3:checked ~ #slides #active label:nth-child(3),
+#switch4:checked ~ #slides #active label:nth-child(4),
+#switch5:checked ~ #slides #active label:nth-child(5){
 	background: rgb(35, 81, 150);
 	width: 0.7em;
 	height: 0.7em;
